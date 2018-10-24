@@ -1,0 +1,10 @@
+alias clean="docker system prune"
+alias dc="docker-compose"
+alias dcb="docker-compose build"
+alias dcu="docker-compose up"
+alias k="kubectl"
+alias dk="docker kill"
+
+# git aliases
+alias savecred="git config credential.helper store && echo \"Should store now\""
+
