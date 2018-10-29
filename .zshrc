@@ -1,5 +1,4 @@
-# Tmux on start...
-ZSH_TMUX_AUTOSTART=true
+if [ "$TMUX" = "" ]; then tmux; fi
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -65,7 +64,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker kubectl mvn pip tmux yarn)
+plugins=(git docker kubectl mvn pip yarn)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -115,3 +114,9 @@ export NVM_DIR="$HOME/.nvm"
 
 
 export PATH="/home/mortuie/.yarn/bin:$PATH"
+
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+export PATH=$PATH:$ANDROID_HOME/emulator

@@ -1,4 +1,5 @@
-
+# removing all the old dotfiles on the local machine..
+rm -rf ~/.vim ~/.vimrc ~/.viminfo ~/.zshrc ~/.aliases
 
 
 # installing my dotfiles
