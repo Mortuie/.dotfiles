@@ -1,11 +1,10 @@
-# removing all the old dotfiles on the local machine..
-rm -rf ~/.vim ~/.vimrc ~/.viminfo ~/.zshrc ~/.aliases ~/.tmux.conf
+#!/bin/bash
+
+set -e
 
 
-# installing my dotfiles
-ln -sv "~/.dotfiles/.vimrc" ~
-ln -sv "~/.dotfiles/.vim" ~
-ln -sv "~/.dotfiles/.viminfo" ~
-ln -sv "~/.dotfiles/.zshrc" ~
-ln -sv "~/.dotfiles/.aliases" ~
-ln -sv "~/.dotfiles/.tmux.conf" ~ 
+for i in vim vimrc viminfo zshrc aliases tmux.conf;
+do	
+	echo "Installing your: $i";
+	ln -sf ~/.dotfiles/$i ~/.$i
+done
