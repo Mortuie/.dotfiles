@@ -7,8 +7,12 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'scrooloose/nerdtree'
+Plugin 'jiangmiao/auto-pairs' " Bracket Pairing 
+Plugin 'SirVer/ultisnips' " Snippets Engine 
 
 call vundle#end()
+
+let g:UltiSnipsExpandTrigger="<tab>"
 
 filetype plugin indent on
 
