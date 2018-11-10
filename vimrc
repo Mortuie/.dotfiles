@@ -9,10 +9,12 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'jiangmiao/auto-pairs' " Bracket Pairing 
 Plugin 'SirVer/ultisnips' " Snippets Engine 
+Plugin 'iamcco/markdown-preview.vim'
 
 call vundle#end()
 
 let g:UltiSnipsExpandTrigger="<tab>"
+let vim_markdown_preview_github=1
 
 filetype plugin indent on
 
