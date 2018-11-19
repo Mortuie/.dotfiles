@@ -9,7 +9,6 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'jiangmiao/auto-pairs' " Bracket Pairing 
 Plugin 'SirVer/ultisnips' " Snippets Engine 
-Plugin 'iamcco/markdown-preview.vim'
 
 call vundle#end()
 
