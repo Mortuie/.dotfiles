@@ -13,10 +13,9 @@ Plugin 'iamcco/markdown-preview.vim'
 
 call vundle#end()
 
+filetype plugin indent on
 let g:UltiSnipsExpandTrigger="<tab>"
 let vim_markdown_preview_github=1
-
-filetype plugin indent on
 
 syntax on
 set showcmd
@@ -35,6 +34,7 @@ set autoindent
 set undofile
 set relativenumber
 
+set hidden " Hidden buffers, with no error message
 
 let mapleader=","
 
@@ -64,8 +64,13 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+
+
+
 map <C-n> :NERDTreeFocus<CR>
+map <C-[> gt
 
 " This closes nerdtree if it's the only window open...
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif 
+
 
