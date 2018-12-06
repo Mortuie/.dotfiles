@@ -9,5 +9,5 @@ alias k="kubectl"
 
 # git aliases
 alias savecred="git config credential.helper store && echo \"Should store now\""
-
+alias gs="git status"
 
