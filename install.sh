@@ -10,7 +10,7 @@ sudo apt -y update \
 
 
 
-for i in vim vimrc viminfo zshrc aliases functions tmux.conf;
+for i in vim vimrc viminfo zshrc aliases functions tmux.conf gitignore_global;
 do	
 	echo "Installing your: $i";
 	ln -sf ~/.dotfiles/$i ~/.$i
