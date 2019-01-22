@@ -1,14 +1,14 @@
 set nocompatible
 filetype off
 
-set rtp+=~/.dotfiles/bundle/Vundle.vim
+set rtp+=~/.dotfiles/vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
-
 Plugin 'scrooloose/nerdtree'
 Plugin 'jiangmiao/auto-pairs' " Bracket Pairing 
 Plugin 'SirVer/ultisnips' " Snippets Engine 
+
 
 call vundle#end()
 
@@ -19,6 +19,7 @@ let vim_markdown_preview_github=1
 syntax on
 set showcmd
 set cursorline
+
 
 set nocompatible
 set modelines=0

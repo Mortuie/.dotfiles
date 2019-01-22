@@ -125,6 +125,10 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:/usr/local/go/bin
 
+# adding android emulator and tools to path
+export ANDROID_SDK=~/Android/Sdk
+export PATH=$ANDROID_SDK/emulator:$ANDROID_SDK/tools:$PATH
+
 prompt_dir() {
   prompt_segment blue black '%c' 
 }
