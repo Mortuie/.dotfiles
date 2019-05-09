@@ -15,3 +15,5 @@ alias k="kubectl"
 alias savecred="git config credential.helper store && echo \"Should store now\""
 alias gs="git status"
 
+# vscode aliases
+alias code="code-insiders"
