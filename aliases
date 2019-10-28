@@ -6,6 +6,7 @@ alias dk="docker kill"
 alias dp="docker ps"
 alias dei="docker exec -it"
 alias dr="docker run"
+alias dcl="docker container list"
 
 # kubernetes aliases
 alias k="kubectl"
