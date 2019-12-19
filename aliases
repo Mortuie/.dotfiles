@@ -14,7 +14,9 @@ alias k="kubectl"
 
 # git aliases
 alias savecred="git config credential.helper store && echo \"Should store now\""
-alias gs="git status"
+alias gituser="git config --global user.email \"jimmybob-leon-leon@hotmail.co.uk\" && git config --global user.name \"mortuie\""
+
+alias ggs="git status"
 
 # vscode aliases
 alias code="code-insiders"

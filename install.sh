@@ -10,8 +10,8 @@ sudo apt -y update \
 
 
 chsh -s $(which zsh)
-
-
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+rm -rf ~/.zshrc
 
 
 
@@ -20,3 +20,6 @@ do
 	echo "Installing your: $i";
 	ln -sf ~/.dotfiles/$i ~/.$i
 done
+
+
+echo "Please relog into your account for the full changes to take affect.";
