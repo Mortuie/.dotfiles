@@ -6,7 +6,7 @@ set -e
 echo "Installing some important packages through apt";
 sudo apt -y update \
   && sudo apt -y upgrade \
-  && sudo apt install tmux curl wget zsh vim zlib1g-dev libffi-dev \
+  && sudo apt -y install tmux curl wget zsh vim zlib1g-dev libffi-dev \
   libssl-dev libreadline-dev bzip2 make build-essential libsqlite3-dev \
   xz-utils apt-transport-https ca-certificates software-properties-common
 
