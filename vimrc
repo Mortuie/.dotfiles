@@ -44,7 +44,7 @@ set textwidth=79
 set formatoptions=qrn1
 
 " Making it easier to learn, unbinding all my arrow keys...
-nnoremap <ESC> <nop>
+"nnoremap <ESC> <nop>
 nnoremap <up> <nop>
 nnoremap <down> <nop>
 nnoremap <left> <nop>

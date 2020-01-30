@@ -17,6 +17,7 @@ do
 	ln -sf ~/.dotfiles/$i ~/.$i
 done
 
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.dotfiles/vim/bundle/Vundle.vim
 
 chsh -s $(which zsh)
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
