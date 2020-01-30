@@ -10,12 +10,6 @@ sudo apt -y update \
   libssl-dev libreadline-dev bzip2 make build-essential libsqlite3-dev \
   xz-utils apt-transport-https ca-certificates software-properties-common
 
-chsh -s $(which zsh)
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-rm -rf ~/.zshrc
-
-git clone https://github.com/pyenv/pyenv.git ~/.pyenv
-
 
 for i in vim vimrc viminfo zshrc aliases functions tmux.conf gitignore_global;
 do	
@@ -23,6 +17,12 @@ do
 	ln -sf ~/.dotfiles/$i ~/.$i
 done
 
+
+chsh -s $(which zsh)
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+rm -rf ~/.zshrc
+
+git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 
 echo "Manual changes needed for KDE - Workspaces";
 echo "Please relog into your account for the full changes to take affect.";
